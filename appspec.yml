@@ -6,17 +6,17 @@ files:
     destination: /var/www/html
 hooks:
   BeforeInstall:
-    - location: scripts/stop_server.sh
+    - location: deployment-archive/stop_server.sh
       timeout: 300
       runas: root
-    - location: scripts/before_install.sh
+    - location: deployment-archive/before_install.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: scripts/change_permissions.sh
+    - location: deployment-archive/change_permissions.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: scripts/start_server.sh
+    - location: deployment-archive/start_server.sh
       timeout: 300
       runas: root
