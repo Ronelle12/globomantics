@@ -4,8 +4,6 @@ os: linux
 files:
   - source: /index.html
     destination: /var/www/html
-    - source: /globo_logo.png 
-    destination: /opt/codedeploy-agent/deployment-root/e98d332c-7494-48ea-9f79-738cdf07c985/d-NKS6Q7163/deployment-archive
 
 hooks:
   BeforeInstall:
