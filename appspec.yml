@@ -3,6 +3,7 @@ version: 0.0
 os: linux
 files:
   - source: /index.html
+  - source: /globo_logo.png 
     destination: /var/www/html
 hooks:
   BeforeInstall:
