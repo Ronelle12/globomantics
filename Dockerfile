@@ -18,8 +18,8 @@ RUN set -x \
         openjdk8="$JAVA_ALPINE_VERSION" \
     && [ "$JAVA_HOME" = "$(docker-java-home)" ]
 
-COPY . /src
-WORKDIR /src
+COPY . /index.html
+WORKDIR /index.html
 EXPOSE 8080
 
 ENTRYPOINT ["java", "./app.sh"}
